@@ -1,19 +1,14 @@
 <?php
+declare(strict_types=1);
 
-function contador($contarHasta, $paso = 1) {
-        if ($contarHasta === null) {
-        $contarHasta = 10;
-    }
-
-// asumo que hay que empezar a contar desde 1
-
-    $i = 1;
+function contarHasta(int $contarHasta = 10, int $paso = 1):void {
+    $i = 0;
     while ($i <= $contarHasta) {
         echo $i . "<br>";
         $i += $paso;
     }
 }
 
-contador(null, 1);
+contarHasta(10, 5);
 
 ?>

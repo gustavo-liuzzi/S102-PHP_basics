@@ -8,54 +8,36 @@ $m = 20.5;
 
 // mostrar en pantalla el valor de las variables que almacenan números enteros y realizar suma, resta, producto y módulo entre ellas
 echo "Variables enteras: <br>";
-echo $x;
-echo "<br>";
-echo $y;
-echo "<br>";
-echo $x + $y;
-echo "<br>";
-echo $x - $y;
-echo "<br>";
-echo $x * $y;
-echo "<br>";
-echo $x % $y;
-echo "<br>";
+echo $x."<br>";
+echo $y."<br>";
+echo "Suma: ".$x + $y."<br>";
+echo "Resta: ".$x - $y."<br>";
+echo "Producto: ".$x * $y."<br>";
+echo "Módulo: ".$x % $y."<br>";
 echo "<br>";
 
 // mostrar en pantalla el valor de las variables que almacenan números decimales y realizar suma, resta, producto y módulo entre ellas
 echo "Variables decimales: <br>";
-echo $n;
-echo "<br>";
-echo $m;
-echo "<br>";
-echo $n + $m;
-echo "<br>";
-echo $n - $m;
-echo "<br>";
-echo $n * $m;
-echo "<br>";
-echo fmod($n, $m);
-echo "<br>";
+echo $n."<br>";
+echo $m."<br>";
+echo "Suma: ".$n + $m."<br>";
+echo "Resta: ".$n - $m."<br>";
+echo "Producto: ".$n * $m."<br>";
+echo "Módulo: ".fmod($n, $m)."<br>";
 echo "<br>";
 
 // operaciones comunes para todas las variables
 echo "Operaciones comunes: <br>";
-echo $x * 2;
-echo "<br>";
-echo $y * 2;
-echo "<br>";
-echo $n * 2;
-echo "<br>";
-echo $m * 2;
-echo "<br>";
-echo $x + $y + $n + $m;
-echo "<br>";
-echo $x * $y * $n * $m;
-echo "<br>";
+echo "Doble de x: ".($x * 2)."<br>";
+echo "Doble de y: ".($y * 2)."<br>";
+echo "Doble de n: ".($n * 2)."<br>";
+echo "Doble de m: ".($m * 2)."<br>";
+echo "Suma de todas las variables: ".($x + $y + $n + $m)."<br>";
+echo "Producto de todas las variables: ".($x * $y * $n * $m)."<br>";
 echo "<br>";
 
 // calculadora
-function calculadora($numero1, $numero2, $operacion) {
+function calcular($numero1, $numero2, $operacion) {
     switch ($operacion) {
         case '+':
             return "Suma: " . $numero1 + $numero2;
@@ -75,6 +57,6 @@ function calculadora($numero1, $numero2, $operacion) {
 
 }
 echo "Prueba de calculadora: <br>";
-echo calculadora($x, $n, '/');
+echo calcular($x, $n, '/');
 
 ?>

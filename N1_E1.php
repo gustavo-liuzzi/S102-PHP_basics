@@ -8,9 +8,9 @@ $booleano = true;
 echo "$entero<br>";
 echo "$double<br>";
 echo "$cadena<br>";
-echo "$booleano<br>";
+var_dump($booleano);
 
-define("NOMBRE", "gustavo liuzzi");
-echo ucwords(NOMBRE);
+const NOMBRE = "gustavo liuzzi";
+echo ("<h1>".ucwords(NOMBRE)."</h1>");
 
 ?>

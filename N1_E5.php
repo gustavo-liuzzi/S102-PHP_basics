@@ -1,25 +1,24 @@
 <?php
+declare (strict_types=1);
 
-// asumo que la nota del estudiante entra por parámetro y es un número de 1 a 10
-
-function calificacionAmostrar($notaNumerica){
-    if (($notaNumerica > 0) && ($notaNumerica <= 10)) {
-        if ($notaNumerica > 5.99) {
-            echo "Primera División";
-        }
-        else if (($notaNumerica > 4.49) && ($notaNumerica < 6)) {
-            echo "Segunda División";
-        }
-        else if (($notaNumerica > 3.29) && ($notaNumerica < 4.5)) {
-            echo "Tercera División";
-        }
-        else {echo "El estudiante suspenderá";}
-
+function clasificarNota(float $notaNumerica): void {
+    if ($notaNumerica < 0 || $notaNumerica > 10) {
+        echo "Error: Nota numérica fuera de rango";
+        return;
     }
-    else {echo "Error: Nota numérica fuera de rango";}
+
+    if ($notaNumerica >= 6) {
+        echo "Primera División";
+    } elseif ($notaNumerica >= 4.5) {
+        echo "Segunda División";
+    } elseif ($notaNumerica >= 3.3) {
+        echo "Tercera División";
+    } else {
+        echo "El estudiante suspenderá";
+    }
 }
 
 // prueba de la función
-calificacionAmostrar(5.48);
+clasificarNota(11);
 
 ?>
