@@ -18,7 +18,6 @@ function clasificarNota(float $notaNumerica): void {
     }
 }
 
-// prueba de la función
 clasificarNota(11);
 
 ?>

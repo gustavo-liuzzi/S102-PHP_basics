@@ -9,7 +9,6 @@ function isBitten() {
     }
 }
 
-// prueba de función
 echo isBitten();
 
 ?>

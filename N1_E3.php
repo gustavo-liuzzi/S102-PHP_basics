@@ -1,12 +1,10 @@
 <?php
 
-// declaración de variables
 $x = 5;
 $y = 10;
 $n = 15.75;
 $m = 20.5;
 
-// mostrar en pantalla el valor de las variables que almacenan números enteros y realizar suma, resta, producto y módulo entre ellas
 echo "Variables enteras: <br>";
 echo $x."<br>";
 echo $y."<br>";
@@ -16,7 +14,6 @@ echo "Producto: ".$x * $y."<br>";
 echo "Módulo: ".$x % $y."<br>";
 echo "<br>";
 
-// mostrar en pantalla el valor de las variables que almacenan números decimales y realizar suma, resta, producto y módulo entre ellas
 echo "Variables decimales: <br>";
 echo $n."<br>";
 echo $m."<br>";
@@ -26,7 +23,6 @@ echo "Producto: ".$n * $m."<br>";
 echo "Módulo: ".fmod($n, $m)."<br>";
 echo "<br>";
 
-// operaciones comunes para todas las variables
 echo "Operaciones comunes: <br>";
 echo "Doble de x: ".($x * 2)."<br>";
 echo "Doble de y: ".($y * 2)."<br>";
@@ -36,7 +32,6 @@ echo "Suma de todas las variables: ".($x + $y + $n + $m)."<br>";
 echo "Producto de todas las variables: ".($x * $y * $n * $m)."<br>";
 echo "<br>";
 
-// calculadora
 function calcular($numero1, $numero2, $operacion) {
     switch ($operacion) {
         case '+':
