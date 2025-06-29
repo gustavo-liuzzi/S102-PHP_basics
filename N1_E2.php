@@ -1,6 +1,6 @@
 <?php
 
-$campoDeTexto = "Hello, world .";
+$campoDeTexto = "Hello, world.";
 $campoDeTexto2 = "Este es el curso de PHP";
 
 echo $campoDeTexto."<br>";
